@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malek &amp; Reem — Wedding Invitation</title>
+<meta name="description" content="You're invited to the wedding of Malek &amp; Reem — June 30th, Moon Plaza Hall, Maadi Corniche.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cairo:wght@300;400;500;600;700&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background music: drop your own licensed/royalty-free track at assets/music.mp3 -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="assets/alex-productions-romantic-music-for-weddings-and-valentines-day-love(chosic.com).mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music" aria-pressed="false">
+  <svg class="music-toggle__icon music-toggle__icon--note" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l11-2v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="16" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+  <svg class="music-toggle__icon music-toggle__icon--mute" width="18" height="18" viewBox="0 0 24 24" fill="none" hidden><path d="M9 18V5l11-2v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><circle cx="17" cy="16" r="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+</button>
+
+<!-- ENVELOPE INTRO -->
+<div class="envelope-intro" id="envelopeIntro">
+  <div class="envelope-intro__inner">
+    <button class="envelope" id="envelopeButton" type="button" aria-label="Open your wedding invitation">
+      <span class="envelope__letter">
+        <span class="envelope__letter-names">Malek &amp; Reem</span>
+      </span>
+      <span class="envelope__flap"></span>
+      <span class="envelope__back"></span>
+      <span class="envelope__seal" aria-hidden="true">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path d="M118 18C78 28 52 64 52 106c0 48 36 84 84 84 14 0 27-3 39-8-22 28-57 46-96 46-66 0-120-54-120-120S13 -12 79 -12c15 0 29 3 42 8-1 7-2 14-3 22z" fill="var(--gold-soft)"/>
+        </svg>
+      </span>
+    </button>
+    <p class="envelope-intro__hint" id="envelopeHint">Tap to open your invitation</p>
+  </div>
+</div>
+
+<!-- Ambient night sky -->
+<div class="sky" aria-hidden="true">
+  <div class="stars stars--small"></div>
+  <div class="stars stars--medium"></div>
+  <div class="stars stars--large"></div>
+  <div class="water-glow"></div>
+</div>
+
+<!-- progress thread -->
+<div class="progress-thread" aria-hidden="true"><div class="progress-thread__fill" id="progressFill"></div></div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__crescent" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path d="M118 18C78 28 52 64 52 106c0 48 36 84 84 84 14 0 27-3 39-8-22 28-57 46-96 46-66 0-120-54-120-120S13 -12 79 -12c15 0 29 3 42 8-1 7-2 14-3 22z" fill="var(--gold)"/>
+      </svg>
+      <div class="hero__stars">
+        <span>✦</span><span>✧</span><span>✦</span>
+      </div>
+    </div>
+
+    <p class="hero__eyebrow reveal hero-reveal">With hearts full of joy</p>
+
+    <h1 class="hero__names reveal hero-reveal">
+      <span class="hero__name">Malek</span>
+      <span class="hero__amp" aria-hidden="true">&amp;</span>
+      <span class="hero__name">Reem</span>
+    </h1>
+
+    <p class="hero__tagline reveal hero-reveal">are tying the knot</p>
+
+    <div class="hero__divider reveal hero-reveal" aria-hidden="true">
+      <span class="line"></span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 14.5 9.5 22 12 14.5 14.5 12 22 9.5 14.5 2 12 9.5 9.5Z" fill="var(--gold)"/></svg>
+      <span class="line"></span>
+    </div>
+
+    <p class="hero__date reveal hero-reveal">June 30th · Moon Plaza Hall, Maadi Corniche</p>
+
+    <a href="#countdown" class="hero__scroll reveal hero-reveal" aria-label="Scroll to countdown">
+      <span>Scroll</span>
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><rect x="1" y="1" width="12" height="20" rx="6" stroke="var(--sand)" stroke-width="1.2"/><circle class="hero__scroll-dot" cx="7" cy="7" r="2" fill="var(--gold)"/></svg>
+    </a>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown" id="countdown">
+    <p class="section-eyebrow reveal">Until we say "I do"</p>
+    <h2 class="section-title reveal">The moon will be full of company</h2>
+
+    <div class="countdown__grid reveal" id="countdownGrid">
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdDays">00</span>
+        <span class="countdown__label">Days</span>
+      </div>
+      <div class="countdown__sep" aria-hidden="true">✦</div>
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdHours">00</span>
+        <span class="countdown__label">Hours</span>
+      </div>
+      <div class="countdown__sep" aria-hidden="true">✦</div>
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdMinutes">00</span>
+        <span class="countdown__label">Minutes</span>
+      </div>
+      <div class="countdown__sep" aria-hidden="true">✦</div>
+      <div class="countdown__unit">
+        <span class="countdown__num" id="cdSeconds">00</span>
+        <span class="countdown__label">Seconds</span>
+      </div>
+    </div>
+
+    <p class="countdown__message" id="countdownMessage" hidden>Tonight, under the Maadi moon — they're married. 🌙</p>
+  </section>
+
+  <!-- BLESSING / QUOTE -->
+  <section class="blessing">
+    <svg class="blessing__ornament" width="46" height="46" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+      <circle cx="23" cy="23" r="21.5" stroke="var(--gold)" stroke-width="1"/>
+      <path d="M23 10 26 20 36 23 26 26 23 36 20 26 10 23 20 20Z" fill="var(--gold)"/>
+    </svg>
+    <p class="blessing__verse blessing__verse--ar reveal" lang="ar" dir="rtl">
+      وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+    </p>
+    <p class="blessing__source reveal">سورة الروم - الآية ٢١</p>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details" id="details">
+    <p class="section-eyebrow reveal">Join us by the water</p>
+    <h2 class="section-title reveal">Celebration Details</h2>
+    <p class="details__invite reveal">Join us for our engagement party at Moon Plaza Hall, Maadi Corniche on June 30th, from 8:00 PM to 12:00 AM</p>
+
+    <div class="details__card reveal">
+      <svg class="details__corner details__corner--tl" viewBox="0 0 60 60" aria-hidden="true"><path d="M2 58V18C2 9 9 2 18 2H58" stroke="var(--gold)" stroke-width="1.3" fill="none"/></svg>
+      <svg class="details__corner details__corner--br" viewBox="0 0 60 60" aria-hidden="true"><path d="M58 2V42C58 51 51 58 42 58H2" stroke="var(--gold)" stroke-width="1.3" fill="none"/></svg>
+
+      <div class="details__row">
+        <div class="details__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2 14.5 9.5 22 12 14.5 14.5 12 22 9.5 14.5 2 12 9.5 9.5Z" fill="var(--gold)"/></svg>
+        </div>
+        <div class="details__text">
+          <span class="details__label">Venue</span>
+          <span class="details__value">Moon Plaza Hall, Maadi Corniche</span>
+        </div>
+        <a class="details__pin" href="https://maps.app.goo.gl/pPA4wVfts74iWLsQA?g_st=ic" target="_blank" rel="noopener noreferrer" aria-label="Open venue location in Google Maps">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z" stroke="var(--gold)" stroke-width="1.4"/><circle cx="12" cy="9.5" r="2.4" stroke="var(--gold)" stroke-width="1.4"/></svg>
+        </a>
+      </div>
+
+      <span class="details__hr" aria-hidden="true"></span>
+
+      <div class="details__row">
+        <div class="details__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="var(--gold)" stroke-width="1.4"/><path d="M3 9h18M8 3v4M16 3v4" stroke="var(--gold)" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="details__text">
+          <span class="details__label">Date</span>
+          <span class="details__value">June 30th</span>
+        </div>
+      </div>
+
+      <span class="details__hr" aria-hidden="true"></span>
+
+      <div class="details__row">
+        <div class="details__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--gold)" stroke-width="1.4"/><path d="M12 7v5l3.5 2" stroke="var(--gold)" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="details__text">
+          <span class="details__label">Time</span>
+          <span class="details__value">8:00 PM – 12:00 AM</span>
+        </div>
+      </div>
+    </div>
+
+    <a class="details__cta reveal" href="https://maps.app.goo.gl/pPA4wVfts74iWLsQA?g_st=ic" target="_blank" rel="noopener noreferrer">
+      Get Directions
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp" id="rsvp">
+    <p class="section-eyebrow reveal">Kindly let us know</p>
+    <h2 class="section-title reveal">RSVP</h2>
+    <p class="rsvp__intro reveal">Send your response straight to us.</p>
+
+    <form class="rsvp__form reveal" id="rsvpForm" novalidate>
+      <div class="rsvp__field">
+        <label for="rsvpName">Name</label>
+        <input type="text" id="rsvpName" name="name" placeholder="Your full name" autocomplete="name">
+      </div>
+
+      <div class="rsvp__field">
+        <label id="rsvpQuestionLabel">Will you attend?</label>
+        <div class="rsvp__poll" role="radiogroup" aria-labelledby="rsvpQuestionLabel">
+          <label class="rsvp__option" data-option="yes">
+            <input type="radio" name="attendance" value="Yes, I'll be there">
+            <span>Yes, I'll be there</span>
+          </label>
+          <label class="rsvp__option" data-option="no">
+            <input type="radio" name="attendance" value="No, I can't make it">
+            <span>No, I can't make it</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="rsvp__field">
+        <label for="rsvpMessage">Message for the couple</label>
+        <textarea id="rsvpMessage" name="message" rows="4" placeholder="Write a wish for Malek &amp; Reem..."></textarea>
+      </div>
+
+      <p class="rsvp__error" id="rsvpError" role="alert" hidden>Please add your name and let us know if you can attend.</p>
+      <p class="rsvp__status" id="rsvpStatus" role="status" hidden></p>
+
+      <button type="submit" class="rsvp__submit" id="rsvpSubmit">
+        <span class="rsvp__submit-label">Send RSVP</span>
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M3 11.5 21 3l-7.5 18-3-7.5L3 11.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+
+      <p class="rsvp__hint">Your response goes straight to Malek &amp; Reem.</p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__crescent" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path d="M118 18C78 28 52 64 52 106c0 48 36 84 84 84 14 0 27-3 39-8-22 28-57 46-96 46-66 0-120-54-120-120S13 -12 79 -12c15 0 29 3 42 8-1 7-2 14-3 22z" fill="var(--gold)"/>
+      </svg>
+    </div>
+    <p class="footer__names">Malek &amp; Reem</p>
+    <p class="footer__date">30 . 06 . 2026</p>
+    <p class="footer__note">We can't wait to celebrate with you 🤍</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
